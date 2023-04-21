@@ -49,7 +49,7 @@
                         <th>#No.</th>
                         <th>Profile</th>
                         <th>Id</th>
-                        <th>Name</th>
+                        <th>First Name</th>
                         <th>Last Name</th>
                         <th>Email</th>
                         <th>Office Code</th>
@@ -122,7 +122,46 @@
         <!---------  Body Area End  --------->
 
         <!---------  Modal Area Start  --------->
-        
+        <div class="modal">
+            <i class="fa-solid fa-circle-xmark"></i>
+            <div class="modal-left">
+                <div class="img-box">
+                    <img src="./src/img/avatar.png" alt="Image Avatar" />
+                    <i class="fa-solid fa-camera"></i>
+                    <input type="file" id="uploadAvatar" />
+                </div>
+            </div>
+            <div class="modal-right">
+                <div class="input-box">
+                    <label for="id">ID</label>
+                    <input type="text" id="id" />
+                </div>
+                <div class="input-box">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" />
+                </div>
+                <div class="input-box">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" />
+                </div>
+                <div class="input-box">
+                    <label for="email">Email Add.</label>
+                    <input type="text" id="email" />
+                </div>
+                <div class="input-box">
+                    <label for="officeCode">Office Code</label>
+                    <input type="text" id="officeCode" />
+                </div>
+                <div class="input-box">
+                    <label for="jobTitle">Job Title</label>
+                    <input type="text" id="jobTitle" />
+                </div>
+                <div class="modal-btn">
+                    <button class="btn">Register</button>
+                    <button disabled class="btn">Update</button>
+                </div>
+            </div>
+        </div>
         <!---------  Modal Area End  --------->
     </body>
 </html>
