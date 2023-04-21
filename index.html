@@ -20,7 +20,11 @@
                 <div class="header-left">
                     <h3 class="logo">Employee</h3>
                     <div class="btn-group-small">
-                        <button class="btn" id="addEmployee">
+                        <button
+                            onclick="openModal()"
+                            class="btn"
+                            id="addEmployee"
+                        >
                             <i class="fa-solid fa-square-plus"></i>Add Employee
                         </button>
                         <button class="btn" id="clearFiltering">
@@ -123,7 +127,11 @@
 
         <!---------  Modal Area Start  --------->
         <div class="modal">
-            <i class="fa-solid fa-circle-xmark" id="closeModal"></i>
+            <i
+                class="fa-solid fa-circle-xmark"
+                id="closeModal"
+                onclick="closeModal()"
+            ></i>
             <div class="modal-left">
                 <div class="img-box">
                     <img src="./src/img/avatar.png" alt="Image Avatar" />
@@ -163,5 +171,8 @@
             </div>
         </div>
         <!---------  Modal Area End  --------->
+
+        <!---------  Adding JavaScript Here  --------->
+        <script src="./src/js/index.js"></script>
     </body>
 </html>
