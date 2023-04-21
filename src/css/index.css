@@ -135,16 +135,18 @@ td .btn i {
     width: 50vw;
     min-height: 300px;
     background-color: #234;
-    box-shadow: 0 0 300px 0 #0005;
+    box-shadow: 0 0 300px 1000px #0009;
     display: flex;
     position: fixed;
     left: 50%;
-    right: 50%;
+    top: 90%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
+    visibility: hidden;
+    opacity: 0;
 }
 .modal > i {
     font-size: 40px;
@@ -213,6 +215,11 @@ td .btn i {
     -ms-border-radius: 1000px;
     -o-border-radius: 1000px;
     opacity: 0;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
 }
 .modal-right .input-box {
     display: flex;
@@ -241,4 +248,9 @@ td .btn i {
     color: #fff8;
     border: none;
     cursor: default;
+}
+.modal.active {
+    visibility: visible;
+    opacity: 1;
+    top: 50%;
 }
